@@ -6,31 +6,31 @@ And also the default solid cache implemented.
 > Please read the paper for better understanding what is its porpuse.
 
 This code basicaly tries to count the number of cache misses when multipling matrix A and matrix B to generate matrix C.  
-It also compares 6 different algorithm when doing this job. ( Inner product, Outer product, Gustavson and ...).
+It also compares 6 different algorithms when doing this job. ( Inner product, Outer product, Gustavson and ...).
 ## Referencing:
-*If you are using the code or any other ideas from the paper/code. I would be appreciated if you cite to this paper:*
+*If you are using this code or any other ideas from the paper/code. I would be appreciated if you cite to this paper:*
   > SplitCache: ...
 
 ### Before starting:
-- The Cache by defualt uses *LRU replacement policy*. If you want to use other replacement policies, you should implement it inside the code.
-- `k0 = 0xF0000000;` is the default address for saving matrices inside the RAM, you could change it to any address you want.
+- The Cache by defualt uses *LRU replacement policy*. If you want to use other replacement policies, you should edit the code.
+- `k0 = 0xF0000000;` is the default starting address for saving matrices inside the RAM, you could change it to any address you want.
 - The cache sizes are indicated by their rows inside the **Sizes.txt** file and also by the terminal arguments that indicates **Block Size** and **Number of Ways inside each row** (which will be discussed in the following)
 - `string filename00 = "_result";` used for naming the *.csv* result files. 
 - You need to adjust **Sizes.txt** and **terminal codes.txt** for your own input matrix dimentions and cache sizes. (which is described in the following)
 - You can add multiple lines to **Sizes.txt** and **terminal codes.txt**. But they should be in the same struction as described.
 
 ### Compile
-- First compile the `cpp` files useing:
+- First compile the `cpp` files using:
   ```
-  g++ -std=c++11 -pthread <input cpp> <output file name.exe>
+  g++ -std=c++11 -pthread <input cpp file> <output file name>
   ```
-- If you want to use back-and-forth optimization edit line: 
+- If you want to use back-and-forth optimization, edit the line: 
 ```
 #define my_optimize1 false
 ```
 and change `false` to `true`
 
-- If you are compiling this code on Windows OS make sure to uncomment line: 
+- If you are compiling this code on Windows OS make sure to uncomment the line: 
 ```
 //typedef unsigned long long int ulong;	
 ```
@@ -54,6 +54,6 @@ The file **terminal Codes.txt** contains the aruments that passed to the executa
 ```
 ./solidCache.exe 128 4096 2048 128 4
 ```
-Here it consists:
+Here, it contains:
 `./<name of the Exe. file> <M argument for Matrix> <K argument for Matrix> <N argument for Matrix> <Cache Block size in Bytes> <Cache ways per row>`
 
