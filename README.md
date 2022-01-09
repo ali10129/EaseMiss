@@ -7,7 +7,9 @@ And also the default solid cache implemented.
 
 This code basicaly tries to count the number of cache misses when multipling matrix A and matrix B to generate matrix C.  
 It also compares 6 different algorithm when doing this job. ( Inner product, Outer product, Gustavson and ...).
-
+## Referencing:
+*If you are using the code or any other ideas from the paper/code. I would be appreciated if you cite to this paper:*
+  > SplitCache: ...
 
 ### Before starting:
 - The Cache by defualt uses *LRU replacement policy*. If you want to use other replacement policies, you should implement it inside the code.
@@ -16,6 +18,7 @@ It also compares 6 different algorithm when doing this job. ( Inner product, Out
 - `string filename00 = "_result";` used for naming the *.csv* result files. 
 - You need to adjust **Sizes.txt** and **terminal codes.txt** for your own input matrix dimentions and cache sizes. (which is described in the following)
 - You can add multiple lines to **Sizes.txt** and **terminal codes.txt**. But they should be in the same struction as described.
+
 ### Compile
 - First compile the `cpp` files useing:
   ```
@@ -52,5 +55,5 @@ The file **terminal Codes.txt** contains the aruments that passed to the executa
 ./solidCache.exe 128 4096 2048 128 4
 ```
 Here it consists:
-`./<name of the Exe file> <M argument for Matrix> <K argument for Matrix> <N argument for Matrix> <Cache Block size in Bytes> <Cache ways per row>`
+`./<name of the Exe. file> <M argument for Matrix> <K argument for Matrix> <N argument for Matrix> <Cache Block size in Bytes> <Cache ways per row>`
 
