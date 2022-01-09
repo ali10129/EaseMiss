@@ -48,9 +48,9 @@ which means that it contains 256 rows for the cache. We used 9 arguments here, y
 ```
 which means: `<row of the Cache for Matrix **A** for *Inner and Rev. Inner product*> <row of the Cache for Matrix **B** for *Inner and Rev. Inner product*> <row of the Cache for Matrix **C** for *Inner and Rev. Inner product*> <row of the Cache for Matrix **A** for *Outer and Rev. Outer product*> <row of the Cache for Matrix **B** for *Outer and Rev. Outer product*> <row of the Cache for Matrix **C** for *Outer and Rev. Outer product*> <row of the Cache for Matrix **A** for *Gustavson and Rev. Gustavson product*> <row of the Cache for Matrix **B** for *Gustavson and Rev. Gustavson product*> <row of the Cache for Matrix **C** for *Gustavson and Rev. Gustavson product*>`
 
-Multiple sizes can be used in each line for both *solid cache* and *SplitCache*  
-So for *solid cache*, matrix B and C cache sizes are 0. Because the use matrix A cache together.  
-The file **terminal Codes.txt** contains the aruments that passed to the executable file through the terminal. for example:
+Multiple sizes can be used in each line for both *solid cache* and *SplitCache*.  
+So for *solid cache*, size of matrix B and C are 0. Because they use the cache space of matrix A jointly.  
+The file **terminal Codes.txt** contains the arguments that passed to the executable file through the terminal. for example:
 ```
 ./solidCache.exe 128 4096 2048 128 4
 ```
