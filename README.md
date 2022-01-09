@@ -1,2 +1,4 @@
 # SplitCache
-Implemented SplitCache paper
+SplitCache paper Implemented  and also default solid cache
+
+
