@@ -1,0 +1,10 @@
+./solidCache.exe 128 4096 2048 128 4
+./solidCache.exe 320 4096 3072 128 4
+./solidCache.exe 1632 1024 36548 128 4
+./solidCache.exe 2048 32 4096 128 4
+./solidCache.exe 35 2560 8457 128 4
+./solidCache.exe 31999 84 1024 128 4
+./solidCache.exe 84 4096 1024 128 4
+./solidCache.exe 2048 128 1 128 4
+./solidCache.exe 256 2048 256 128 4
+./solidCache.exe 1024 500000 16 128 4
