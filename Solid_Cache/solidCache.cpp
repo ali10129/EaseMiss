@@ -114,7 +114,7 @@ private:
 	}
 
 	static ulong rwmiss(Cache* a, Cache* b, Cache* c) {
-		return ((a->Miss + b->Miss + c->Miss)/3);
+		return ((a->Miss + b->Miss + c->Miss) / 3);   //devided by 3: because it counts 3 times and a,b,c are the same caches!
 	}
 
 public:
