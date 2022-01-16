@@ -114,7 +114,7 @@ private:
 	}
 
 	static ulong rwmiss(Cache* a, Cache* b, Cache* c) {
-		return a->Miss + b->Miss + c->Miss;
+		return ((a->Miss + b->Miss + c->Miss)/3);
 	}
 
 public:
