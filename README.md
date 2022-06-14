@@ -1,6 +1,6 @@
-# SplitCache
+# EaseMiss paper
 
-## SplitCache paper Implemented 
+## EaseMiss paper Implementated
 And also the default solid cache implemented.
 
 > Please read the paper for better understanding what is its porpuse.
@@ -9,7 +9,7 @@ This code basicaly tries to count the number of cache misses when multipling mat
 It also compares 6 different algorithms when doing this job. ( Inner product, Outer product, Gustavson and ...).
 ## Referencing:
 *If you are using this code or any other ideas from the paper/code. I would be appreciated if you cite to this paper:*
-  > SplitCache: ...
+  > EaseMiss: HW/SW Co-Optimization for Efficient Large Matrix-Matrix Multiply Operations
 
 ### Before starting:
 - The Cache by defualt uses *LRU replacement policy*. If you want to use other replacement policies, you should edit the code.
