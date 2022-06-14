@@ -3,7 +3,7 @@
 ## EaseMiss paper Implementated
 And also the default solid cache implemented.
 
-> Please read the paper for better understanding what is its porpuse.
+> Please read the paper for better understanding what its porpuse is.
 
 This code basicaly tries to count the number of cache misses when multipling matrix A and matrix B to generate matrix C.  
 It also compares 6 different algorithms when doing this job. ( Inner product, Outer product, Gustavson and ...).
